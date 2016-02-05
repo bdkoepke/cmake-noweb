@@ -1,0 +1,11 @@
+<<main.h>>=
+#pragma once
+
+<<main.c>>=
+#include "main.h"
+#include <stdio.h>
+
+void main() {
+  puts("Hello World!");
+}
+@
