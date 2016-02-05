@@ -1,7 +1,11 @@
-CMakeFiles/
-CMakeCache.txt
-cmake_install.cmake
-Makefile
+*.aux
 *.c
 *.h
+*.log
+*.pdf
+*.tex
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
 quant
