@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8)
 include(noweb.cmake)
-########### next target ###############
+include(UseLATEX.cmake)
 set(quant_C
     main.c)
 set(quant_H
@@ -16,5 +16,9 @@ add_custom_target(weave DEPENDS ${quant_TEX})
 
 add_executable(quant ${quant_C})
 add_dependencies(quant tangle)
-
 target_link_libraries(quant m)
+
+add_latex_document(cmake_noweb.tex
+                   FORCE_PDF
+                   TARGET_NAME cmake_noweb)
+add_dependencies(cmake_noweb_pdf weave)

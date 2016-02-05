@@ -16,7 +16,7 @@ function(tangle files)
         add_custom_command(
             OUTPUT ${path}
             PRE_BUILD
-            COMMAND notangle -R${dash_name} ${NW_path} > ${path}
+            COMMAND notangle -R${dash_name} "${CMAKE_CURRENT_SOURCE_DIR}/${NW_path}" >  ${path}
         )
     endforeach(i)
 endfunction(tangle)
@@ -37,7 +37,7 @@ function(weave files)
         add_custom_command(
             OUTPUT ${path}
             PRE_BUILD
-            COMMAND noweave -x -latex -delay -autodefs c -n ${NW_path} > ${path}
+            COMMAND noweave -x -latex -delay -autodefs c -n "${CMAKE_CURRENT_SOURCE_DIR}/${NW_path}" >  ${path}
         )
     endforeach(i)
 endfunction(weave)
