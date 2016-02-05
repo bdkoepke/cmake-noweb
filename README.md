@@ -8,9 +8,10 @@ This example will build a C executable named 'quant' and will build a pdf named 
 Ensure that you have UseLatex.cmake in your cmake modules path (https://cmake.org/Wiki/CMakeUserUseLATEX).
 
 To get started, run
- git clone https://github.com/bdkoepke/cmake-noweb
- mkdir build
- cd build
- cmake ../cmake-noweb && make
+
+    git clone https://github.com/bdkoepke/cmake-noweb
+    mkdir build
+    cd build
+    cmake ../cmake-noweb && make
 
 If you want more files, add them to the sets in CMakeLists.txt.
