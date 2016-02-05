@@ -1,10 +1,16 @@
 # cmake-noweb
-CMake and the noweb literate programming tool template.
+CMake and the noweb literate programming tool template. 
 
-This is a barebones example that integrates noweb and cmake.
+This is a barebones example that integrates cmake, noweb, and latex.
 
-To get started clone this repository and run cmake && make from the root of the source you just checked out.
+This example will build a C executable named 'quant' and will build a pdf named 'cmake-noweb.pdf' in the src/ directory.
 
-This will create main.c and main.h files inside src/ and will create an executable quant inside the src directory.
+Ensure that you have UseLatex.cmake in your cmake modules path (https://cmake.org/Wiki/CMakeUserUseLATEX).
 
-If you want more files add more to the sets in CMakeLists.txt.
+To get started, run
+ git clone https://github.com/bdkoepke/cmake-noweb
+ mkdir build
+ cd build
+ cmake ../cmake-noweb && make
+
+If you want more files, add them to the sets in CMakeLists.txt.

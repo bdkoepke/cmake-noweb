@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8)
 include(noweb.cmake)
-include(UseLATEX.cmake)
+include(UseLatex)
 set(quant_C
     main.c)
 set(quant_H
