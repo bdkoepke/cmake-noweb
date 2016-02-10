@@ -10,8 +10,9 @@ Ensure that you have UseLatex.cmake in your cmake modules path (https://cmake.or
 To get started, run
 
     git clone https://github.com/bdkoepke/cmake-noweb
+    cd cmake-noweb
     mkdir build
     cd build
-    cmake ../cmake-noweb && make
+    cmake .. && make
 
 If you want more files, add them to the sets in CMakeLists.txt.
