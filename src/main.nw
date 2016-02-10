@@ -1,11 +1,19 @@
-<<main.h>>=
-#pragma once
-
-<<main.c>>=
-#include "main.h"
-#include <stdio.h>
-
+\section{Hello World}
+We print hello world with the built-in function puts.
+<<main>>=
 int main() {
   puts("Hello World!");
 }
+@
+
+Default empty header.
+<<main.h>>=
+#pragma once
+@
+
+Final internal implementation. Will print Hello World!.
+<<main.c>>=
+#include "main.h"
+#include <stdio.h>
+<<main>>
 @
